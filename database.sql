@@ -37,3 +37,45 @@ USE `salesdb`;
 
 -- grant all on salesdb.orders to jay@localhost;
 -- grant all on salesdb.employees to jay@localhost;
+
+-- drop user jay@localhost;
+
+-- create roles
+
+-- create role devs, clients, admins;
+-- create users
+
+-- create user 'eliud'@'localhost'
+-- identified by '1234';
+-- create user 'kioko'@'localhost'
+-- identified by '1234';
+-- create user 'mali'@'localhost'
+-- identified by '1234';
+-- create user 'kim'@'localhost'
+-- identified by '1234';
+
+-- Assign permission
+-- grant all on salesdb.* to devs;
+-- grant select on salesdb.* to clients;
+-- grant insert, update, delete, select on salesdb.* to admins;
+
+-- Add users to roles
+-- grant devs to eliud@localhost;
+-- grant clients to kioko@localhost;
+-- grant admins to kim@localhost;
+
+-- show grants for eliud@localhost using devs;
+
+-- Grant all privileges to devs (eliud)
+-- GRANT ALL PRIVILEGES ON salesdb.* TO 'eliud'@'localhost';
+
+-- Grant SELECT only to clients (kioko)
+-- GRANT SELECT ON salesdb.* TO 'kioko'@'localhost';
+
+-- Grant insert, update, delete, and select to admins (kim)
+-- GRANT INSERT, UPDATE, DELETE, SELECT ON salesdb.* TO 'kim'@'localhost';
+
+-- Revoke user permisiions
+-- REVOKE ALL, GRANT OPTION FROM kioko@localhost;
+
+
